@@ -38,14 +38,14 @@ public class MainMenuScreen extends AbstractScreen {
         createStageGame();
         app.batch.setProjectionMatrix(getCamera().combined);
         app.shapeBatch.setProjectionMatrix(getCamera().combined);
-        background = new Texture("images/backgrounds/mainmenu.jpg");
+        background = new Texture("images/backgrounds/welcome.jpg");
 
         soundCloseDoor = new SoundEffect("sounds/closedoor.ogg");
         soundCloseDoor.setSoundKind(SoundEffect.SoundKind.ONE_TIME);
         isCloseDoor = false;
 
 
-        musicMenu = new MusicEffect("sounds/mainmenu_2.ogg");
+        musicMenu = new MusicEffect("sounds/menu_music.ogg");
         musicMenu.setMusicKind(MusicEffect.MusicKind.DURING);
         musicMenu.playMusicLoopOnAndroid();
 
