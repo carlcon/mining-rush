@@ -143,6 +143,7 @@ public class ActorButton extends Actor {
         if(buttonTag.equals(ButtonTag.FINISH_BACK_MENU)){
             buttonAnimation = new AnimationCustom("animations/buttons/backmainmenu/backmainmenu.atlas", 20f,  getX(), getY(), getWidth(), getHeight());
         }
+
     }
 
     private void setButtonPosition(float width, float height){
