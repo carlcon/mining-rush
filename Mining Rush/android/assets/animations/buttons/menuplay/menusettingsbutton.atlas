@@ -1,0 +1,12 @@
+menusettingsbutton.png
+size: 1117, 401
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+button_settings
+  rotate: false
+  xy: 1, 1
+  size: 1115, 399
+  orig: 1250, 1250
+  offset: 75, 417
+  index: -1
