@@ -9,6 +9,7 @@ import vn.edu.tdt.finalproject.screens.LoseScreen;
 import vn.edu.tdt.finalproject.screens.MainMenuScreen;
 import vn.edu.tdt.finalproject.screens.ScreenPlayLevel1;
 import vn.edu.tdt.finalproject.screens.ScreenPlayLevel2;
+import vn.edu.tdt.finalproject.screens.ScreenPlayLevel3;
 import vn.edu.tdt.finalproject.screens.ScreenTest;
 import vn.edu.tdt.finalproject.screens.ShopScreen;
 import vn.edu.tdt.finalproject.screens.WinScreen;
@@ -48,6 +49,9 @@ public class GameScreenManager {
         }
         if(level == ScreenConstants.PLAY_LEVEL_SCREEN[1]){
             gameScreen = new ScreenPlayLevel2(this.app);
+        }
+        if(level == ScreenConstants.PLAY_LEVEL_SCREEN[2]){
+            gameScreen = new ScreenPlayLevel3(this.app);
         }
         return gameScreen;
     }

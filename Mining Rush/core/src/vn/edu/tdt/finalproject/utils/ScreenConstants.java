@@ -19,5 +19,5 @@ public class ScreenConstants {
     public static final int LOSE_SCREEN = -2;
     public static final int WIN_SCREEN = -1;
     public static final int MAINMENU_SCREEN = 0;
-    public static final int[] PLAY_LEVEL_SCREEN = {1, 2};
+    public static final int[] PLAY_LEVEL_SCREEN = {1, 2, 3};
 }
