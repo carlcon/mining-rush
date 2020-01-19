@@ -18,6 +18,9 @@ public class ActorButton extends Actor {
         SETTING,
         TARGET_PLAY,
         MAINMENU_PLAY,
+        MAINMENU_EXIT,
+        MAINMENU_SETTINGS,
+        MAINMENU_HOW,
         SETTING_MAINMENU,
         SETTING_RESUME,
         WIN_GOTO_SHOP,
@@ -113,6 +116,19 @@ public class ActorButton extends Actor {
         if(buttonTag.equals(ButtonTag.MAINMENU_PLAY)){
             buttonAnimation = new AnimationCustom("animations/buttons/menuplay/menuplaybutton.atlas", 20f,  getX(), getY(), getWidth(), getHeight());
         }
+
+        if (buttonTag.equals(ButtonTag.MAINMENU_HOW)){
+            buttonAnimation = new AnimationCustom("animations/buttons/menuplay/menuhowbutton.atlas", 20f,  getX(), getY(), getWidth(), getHeight());
+        }
+
+        if (buttonTag.equals(ButtonTag.MAINMENU_SETTINGS)){
+            buttonAnimation = new AnimationCustom("animations/buttons/menuplay/menusettingsbutton.atlas", 20f,  getX(), getY(), getWidth(), getHeight());
+        }
+
+        if (buttonTag.equals(ButtonTag.MAINMENU_EXIT)){
+            buttonAnimation = new AnimationCustom("animations/buttons/menuplay/menuexitbutton.atlas", 20f,  getX(), getY(), getWidth(), getHeight());
+        }
+
         if(buttonTag.equals(ButtonTag.SETTING)){
             buttonAnimation = new AnimationCustom("animations/buttons/setting/settingbutton.atlas", 20f,  getX(), getY(), getWidth(), getHeight());
         }

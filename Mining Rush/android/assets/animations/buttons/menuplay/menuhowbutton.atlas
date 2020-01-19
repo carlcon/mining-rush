@@ -3,10 +3,17 @@ size: 1117, 401
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-buttons_how
-  rotate: false
-  xy: 1, 1
-  size: 1115, 399
-  orig: 1250, 1250
-  offset: 75, 417
-  index: -1
+mainmenuhow0
+    rotate: false
+    xy: 1, 5
+    size: 1250, 1250
+    orig: 1250, 1250
+    offset: 0, 0
+    index: -1
+mainmenuhow1
+    rotate: false
+    xy: 1, 1
+    size: 1250, 1250
+    orig: 1250, 1250
+    offset: 0, 0
+    index: -1

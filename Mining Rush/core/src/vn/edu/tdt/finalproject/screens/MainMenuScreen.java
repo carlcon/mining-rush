@@ -17,6 +17,9 @@ public class MainMenuScreen extends AbstractScreen {
 
     private Texture background;
     private ActorButton btnPlayGame;
+    private ActorButton btnSettingsGame;
+    private ActorButton btnExitGame;
+    private ActorButton btnHowGame;
     private MusicEffect musicMenu;
     private SoundEffect soundCloseDoor;
     private boolean isCloseDoor;
@@ -44,14 +47,19 @@ public class MainMenuScreen extends AbstractScreen {
         soundCloseDoor.setSoundKind(SoundEffect.SoundKind.ONE_TIME);
         isCloseDoor = false;
 
-
         musicMenu = new MusicEffect("sounds/menu_music.ogg");
         musicMenu.setMusicKind(MusicEffect.MusicKind.DURING);
         musicMenu.playMusicLoopOnAndroid();
 
-        btnPlayGame = new ActorButton(128f, 128f, ActorButton.ButtonTag.MAINMENU_PLAY);
+        btnPlayGame = new ActorButton(750,300, 128f, 128f, ActorButton.ButtonTag.MAINMENU_PLAY);
+        btnExitGame = new ActorButton(750,75, 128f, 128f, ActorButton.ButtonTag.MAINMENU_EXIT);
+        btnHowGame = new ActorButton(750,175, 128f, 128f, ActorButton.ButtonTag.MAINMENU_HOW);
+        btnSettingsGame = new ActorButton(750,150, 128f, 128f, ActorButton.ButtonTag.MAINMENU_SETTINGS);
 
         getStageGame().addActor(btnPlayGame);
+        getStageGame().addActor(btnHowGame);
+        getStageGame().addActor(btnSettingsGame);
+        getStageGame().addActor(btnExitGame);
         Gdx.input.setInputProcessor(getStageGame());
 
         PlayerInfo.setCurrentBombNum(3);
