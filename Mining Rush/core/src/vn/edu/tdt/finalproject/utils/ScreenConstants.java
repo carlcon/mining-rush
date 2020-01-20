@@ -14,10 +14,12 @@ public class ScreenConstants {
     public static final float HUMAN_WIDTH = 90f;
     public static final float HUNAM_HEIGHT = 75f;
 
+    public static final int MAINMENU_SETTINGS = -6;
+    public static final int MAINMENU_HOW = -5;
     public static final int FINISH_SCREEN = -4;
     public static final int SHOP_SCREEN = -3;
     public static final int LOSE_SCREEN = -2;
     public static final int WIN_SCREEN = -1;
     public static final int MAINMENU_SCREEN = 0;
-    public static final int[] PLAY_LEVEL_SCREEN = {1, 2, 3};
+    public static final int[] PLAY_LEVEL_SCREEN = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
 }
