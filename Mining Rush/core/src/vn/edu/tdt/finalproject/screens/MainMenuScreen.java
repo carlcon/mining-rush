@@ -78,12 +78,31 @@ public class MainMenuScreen extends AbstractScreen {
         app.batch.end();
 
         getStageGame().act();
+
         btnPlayGame.updateButtonTouched();
         if(btnPlayGame.isTouched()){
             updateMenuSound();
             startTime = TimeUtils.millis()/1000;
             isCloseDoor = true;
+            app.gsm.setScreen(1);
         }
+
+        btnHowGame.updateButtonTouched();
+        if(btnHowGame.isTouched()){
+            updateMenuSound();
+            startTime = TimeUtils.millis()/1000;
+            isCloseDoor = true;
+            app.gsm.setScreen(ScreenConstants.MAINMENU_HOW);
+        }
+
+        btnSettingsGame.updateButtonTouched();
+        if(btnSettingsGame.isTouched()){
+            updateMenuSound();
+            startTime = TimeUtils.millis()/1000;
+            isCloseDoor = true;
+            app.gsm.setScreen(ScreenConstants.MAINMENU_SETTINGS);
+        }
+
         getStageGame().draw();
 
         app.batch.begin();
@@ -95,9 +114,15 @@ public class MainMenuScreen extends AbstractScreen {
 
         if(SplashDoors.checkDoorClose()){
             if(TimeUtils.millis()/1000 - startTime >= 1) {
-                app.gsm.setScreen(1);
+                //app.gsm.setScreen(1);
                 dispose();
             }
+        }
+
+        btnExitGame.updateButtonTouched();
+        if(btnExitGame.isTouched()){
+            dispose();
+            Gdx.app.exit();
         }
     }
 
