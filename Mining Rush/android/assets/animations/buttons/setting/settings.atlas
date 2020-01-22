@@ -1,16 +1,16 @@
-
-playbutton.png
+settings.png
+size: 514, 514
 format: RGBA8888
-filter: Nearest,Nearest
+filter: Linear,Linear
 repeat: none
-play0
+setting0
   rotate: false
   xy: 1, 5
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
-play1
+setting1
   rotate: false
   xy: 1, 1
   size: 128, 128

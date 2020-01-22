@@ -65,7 +65,6 @@ public class ScreenPlayLevel1 extends AbstractScreen{
         lstAcRod = new ArrayList<ActorRod>();
         lstAcText = new HashMap<ActorText.TextTag, ActorText>();
 
-
         acHuman = new ActorHuman();
         shootButton = new ActorButton(128f,128f, ActorButton.ButtonTag.SHOOT);
         boomButton = new ActorButton(128f, 128f, ActorButton.ButtonTag.BOOM);
@@ -79,11 +78,11 @@ public class ScreenPlayLevel1 extends AbstractScreen{
         lstAcRod.add(new ActorRod(100f, 120f, 60f, 50f, ActorRod.RodTag.ROCK_20));
         lstAcRod.add(new ActorRod(750f, 100f, 40f, 40f, ActorRod.RodTag.ROCK_10));
 
-        lstAcRod.add(new ActorRod(200f, 100f, 80f, 80f, ActorRod.RodTag.GOLD_500));
+        lstAcRod.add(new ActorRod(250f, 150f, 80f, 80f, ActorRod.RodTag.GOLD_500));
         lstAcRod.add(new ActorRod(90f, 50f, 40f, 40f, ActorRod.RodTag.GOLD_100));
         lstAcRod.add(new ActorRod(600f, 100f, 60f, 60f, ActorRod.RodTag.GOLD_250));
 
-        lstAcRod.add(new ActorRod(700f, 300f, 40f, 30f, ActorRod.RodTag.DINAMOND_650));
+        lstAcRod.add(new ActorRod(800f, 260f, 40f, 40f, ActorRod.RodTag.ROCK_10));
         lstAcRod.add(new ActorRod(10f, 300f, 60f, 60f, ActorRod.RodTag.GOLD_250));
         lstAcRod.add(new ActorRod(10f, 200f, 80f, 80f, ActorRod.RodTag.GOLD_500));
 

@@ -130,7 +130,7 @@ public class ActorButton extends Actor {
         }
 
         if(buttonTag.equals(ButtonTag.SETTING)){
-            buttonAnimation = new AnimationCustom("animations/buttons/setting/settingbutton.atlas", 20f,  getX(), getY(), getWidth(), getHeight());
+            buttonAnimation = new AnimationCustom("animations/buttons/setting/settings.atlas", 20f,  getX(), getY(), getWidth(), getHeight());
         }
         if(buttonTag.equals(ButtonTag.SETTING_MAINMENU)){
             buttonAnimation = new AnimationCustom("animations/buttons/backmainmenu/backmainmenu.atlas", 20f,  getX(), getY(), getWidth(), getHeight());
