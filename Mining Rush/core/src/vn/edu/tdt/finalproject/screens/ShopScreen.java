@@ -49,7 +49,7 @@ public class ShopScreen extends AbstractScreen{
         createStageGame();
         app.batch.setProjectionMatrix(getCamera().combined);
         app.shapeBatch.setProjectionMatrix(getCamera().combined);
-        background = new Texture("images/backgrounds/shopbackground.png");
+        background = new Texture("images/backgrounds/shop_front.jpg");
         currentMoneyBack = new Texture("images/backgrounds/currmoneyback.png");
         currMoneyText = new TextNoBackground(Color.BROWN, 22);
         isFinishScreen = false;

@@ -56,7 +56,7 @@ public class WinScreen extends AbstractScreen {
         soundCloseDoor = new SoundEffect("sounds/closedoor.ogg");
         soundCloseDoor.setSoundKind(SoundEffect.SoundKind.ONE_TIME);
 
-        musicThugsLife = new MusicEffect("sounds/thugslife.ogg");
+        musicThugsLife = new MusicEffect("sounds/victory.ogg");
         musicThugsLife.setMusicKind(MusicEffect.MusicKind.DURING);
         musicThugsLife.playMusicLoopOnAndroid();
 

@@ -54,11 +54,12 @@ public class ScreenPlayLevel12 extends AbstractScreen {
     public void show() {
         this.createCamera();
         createStageGame();
+        PlayerInfo.setCurrentTarget(8800);
         //stage.setDebugAll(true);
 
         app.batch.setProjectionMatrix(getCamera().combined);
         app.shapeBatch.setProjectionMatrix(getCamera().combined);
-        background = new Texture("images/backgrounds/map_day.jpg");
+        background = new Texture("images/backgrounds/ingame_background.png");
 
         startTime = TimeUtils.millis()/1000;
         pauseTempTime = new long[2];
@@ -124,6 +125,7 @@ public class ScreenPlayLevel12 extends AbstractScreen {
         Gdx.input.setInputProcessor(stageSetting);
 
         setScreenState(ScreenState.PAUSE);
+
     }
 
     @Override

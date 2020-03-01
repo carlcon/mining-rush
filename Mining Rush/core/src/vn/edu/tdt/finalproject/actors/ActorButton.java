@@ -21,6 +21,7 @@ public class ActorButton extends Actor {
         MAINMENU_EXIT,
         MAINMENU_SETTINGS,
         MAINMENU_HOW,
+        MAINMENU_ALMANAC,
         SETTING_MAINMENU,
         SETTING_RESUME,
         WIN_GOTO_SHOP,
@@ -125,10 +126,13 @@ public class ActorButton extends Actor {
             buttonAnimation = new AnimationCustom("animations/buttons/menuplay/menusettingsbutton.atlas", 20f,  getX(), getY(), getWidth(), getHeight());
         }
 
+        if (buttonTag.equals(ButtonTag.MAINMENU_ALMANAC)){
+            buttonAnimation = new AnimationCustom("animations/buttons/menuplay/almanac.atlas",20f,  getX(), getY(), getWidth(), getHeight());
+        }
+
         if (buttonTag.equals(ButtonTag.MAINMENU_EXIT)){
             buttonAnimation = new AnimationCustom("animations/buttons/menuplay/menuexitbutton.atlas", 20f,  getX(), getY(), getWidth(), getHeight());
         }
-
         if(buttonTag.equals(ButtonTag.SETTING)){
             buttonAnimation = new AnimationCustom("animations/buttons/setting/settings.atlas", 20f,  getX(), getY(), getWidth(), getHeight());
         }

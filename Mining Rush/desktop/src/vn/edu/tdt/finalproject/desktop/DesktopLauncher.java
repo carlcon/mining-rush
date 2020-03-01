@@ -11,7 +11,7 @@ public class DesktopLauncher {
 		config.title = "Mining Rush";
 		config.width = Application.DESKTOP_WIDTH;
 		config.height = Application.DESKTOP_HEIGHT;
-		config.addIcon("images/icons/gold.png", Files.FileType.Internal); // app icon
+		//config.addIcon("images/icons/gold.png", Files.FileType.Internal); // app icon
 		new LwjglApplication(new Application(), config);
 	}
 }

@@ -20,6 +20,7 @@ public class MainMenuScreen extends AbstractScreen {
     private ActorButton btnSettingsGame;
     private ActorButton btnExitGame;
     private ActorButton btnHowGame;
+    private ActorButton btnAlmanac;
     private MusicEffect musicMenu;
     private SoundEffect soundCloseDoor;
     private boolean isCloseDoor;
@@ -51,12 +52,14 @@ public class MainMenuScreen extends AbstractScreen {
         musicMenu.setMusicKind(MusicEffect.MusicKind.DURING);
         musicMenu.playMusicLoopOnAndroid();
 
-        btnPlayGame = new ActorButton(750,300, 128f, 128f, ActorButton.ButtonTag.MAINMENU_PLAY);
-        btnExitGame = new ActorButton(750,75, 128f, 128f, ActorButton.ButtonTag.MAINMENU_EXIT);
-        btnHowGame = new ActorButton(750,175, 128f, 128f, ActorButton.ButtonTag.MAINMENU_HOW);
-        btnSettingsGame = new ActorButton(750,150, 128f, 128f, ActorButton.ButtonTag.MAINMENU_SETTINGS);
+        btnPlayGame = new ActorButton(700,345, 128f, 128f, ActorButton.ButtonTag.MAINMENU_PLAY);
+        btnAlmanac = new ActorButton(700,270, 128f, 128f, ActorButton.ButtonTag.MAINMENU_ALMANAC);
+        btnHowGame = new ActorButton(700,195, 128f, 128f, ActorButton.ButtonTag.MAINMENU_HOW);
+        btnSettingsGame = new ActorButton(700,120, 128f, 128f, ActorButton.ButtonTag.MAINMENU_SETTINGS);
+        btnExitGame = new ActorButton(700,45, 128f, 128f, ActorButton.ButtonTag.MAINMENU_EXIT);
 
         getStageGame().addActor(btnPlayGame);
+        getStageGame().addActor(btnAlmanac);
         getStageGame().addActor(btnHowGame);
         getStageGame().addActor(btnSettingsGame);
         getStageGame().addActor(btnExitGame);

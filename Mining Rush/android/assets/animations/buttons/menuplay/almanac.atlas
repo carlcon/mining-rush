@@ -1,0 +1,12 @@
+almanac.png
+size: 1250, 1250
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+almanac
+  rotate: false
+  xy: 0, 0
+  size: 1250, 1250
+  orig: 1250, 1250
+  offset: 0, 0
+  index: -1

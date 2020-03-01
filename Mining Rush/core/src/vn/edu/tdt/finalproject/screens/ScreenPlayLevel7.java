@@ -54,11 +54,12 @@ public class ScreenPlayLevel7 extends AbstractScreen {
     public void show() {
         this.createCamera();
         createStageGame();
+        PlayerInfo.setCurrentTarget(5000);
         //stage.setDebugAll(true);
 
         app.batch.setProjectionMatrix(getCamera().combined);
         app.shapeBatch.setProjectionMatrix(getCamera().combined);
-        background = new Texture("images/backgrounds/map_day.jpg");
+        background = new Texture("images/backgrounds/ingame_background.png");
 
         startTime = TimeUtils.millis()/1000;
         pauseTempTime = new long[2];
@@ -72,25 +73,33 @@ public class ScreenPlayLevel7 extends AbstractScreen {
         boomButton = new ActorButton(128f, 128f, ActorButton.ButtonTag.BOOM);
         settingButton = new ActorButton(100f, 100f, ActorButton.ButtonTag.SETTING);
 
-        lstAcRod.add(new ActorRod(100f, 50f, 60f, 50f, ActorRod.RodTag.ROCK_20));
-        lstAcRod.add(new ActorRod(250f, 80f, 60f, 50f, ActorRod.RodTag.ROCK_20));
-        lstAcRod.add(new ActorRod(500f, 10f, 60f, 50f, ActorRod.RodTag.ROCK_20));
-        lstAcRod.add(new ActorRod(180f, 350f, 60f, 50f, ActorRod.RodTag.ROCK_20));
+        lstAcRod.add(new ActorRod(529f, 300f, 60f, 50f, ActorRod.RodTag.ROCK_10));
+        lstAcRod.add(new ActorRod(683f, 281f, 60f, 50f, ActorRod.RodTag.ROCK_10));
+        lstAcRod.add(new ActorRod(825f, 212f, 60f, 50f, ActorRod.RodTag.ROCK_10));
+        lstAcRod.add(new ActorRod(189f, 376f, 60f, 50f, ActorRod.RodTag.ROCK_10));
+        lstAcRod.add(new ActorRod(175f, 263f, 60f, 50f, ActorRod.RodTag.ROCK_10));
 
-        lstAcRod.add(new ActorRod(700f, 200f, 60f, 50f, ActorRod.RodTag.ROCK_20));
-        lstAcRod.add(new ActorRod(500f, 200f, 60f, 50f, ActorRod.RodTag.ROCK_20));
-        lstAcRod.add(new ActorRod(400f, 150f, 60f, 50f, ActorRod.RodTag.ROCK_20));
-        lstAcRod.add(new ActorRod(300f, 50f, 60f, 50f, ActorRod.RodTag.ROCK_20));
-        lstAcRod.add(new ActorRod(700f, 90f, 60f, 50f, ActorRod.RodTag.ROCK_20));
-        lstAcRod.add(new ActorRod(100f, 120f, 60f, 50f, ActorRod.RodTag.ROCK_20));
+        lstAcRod.add(new ActorRod(619f, 185f, 60f, 50f, ActorRod.RodTag.ROCK_20));
+        lstAcRod.add(new ActorRod(351f, 262f, 60f, 50f, ActorRod.RodTag.ROCK_20));
+        lstAcRod.add(new ActorRod(200f, 125f, 60f, 50f, ActorRod.RodTag.ROCK_20));
+        lstAcRod.add(new ActorRod(817f, 351f, 60f, 50f, ActorRod.RodTag.ROCK_20));
 
-        lstAcRod.add(new ActorRod(800f, 100f, 40f, 30f, ActorRod.RodTag.DINAMOND_650));
-        lstAcRod.add(new ActorRod(200f, 200f, 80f, 80f, ActorRod.RodTag.GOLD_500));
-        lstAcRod.add(new ActorRod(50f, 50f, 40f, 30f, ActorRod.RodTag.DINAMOND_650));
-        lstAcRod.add(new ActorRod(600f, 100f, 60f, 60f, ActorRod.RodTag.GOLD_250));
-        lstAcRod.add(new ActorRod(700f, 300f, 40f, 30f, ActorRod.RodTag.DINAMOND_650));
-        lstAcRod.add(new ActorRod(10f, 300f, 60f, 60f, ActorRod.RodTag.GOLD_250));
-        lstAcRod.add(new ActorRod(10f, 200f, 80f, 80f, ActorRod.RodTag.GOLD_500));
+        lstAcRod.add(new ActorRod(478f, 40f, 60f, 50f, ActorRod.RodTag.GOLD_100));
+
+        lstAcRod.add(new ActorRod(385f, 145f, 60f, 50f, ActorRod.RodTag.GOLD_250));
+        lstAcRod.add(new ActorRod(705f, 66f, 60f, 50f, ActorRod.RodTag.GOLD_250));
+
+        lstAcRod.add(new ActorRod(290f, 174f, 80f, 80f, ActorRod.RodTag.GOLD_500));
+        lstAcRod.add(new ActorRod(51f, 37f, 80f, 80f, ActorRod.RodTag.GOLD_500));
+        lstAcRod.add(new ActorRod(899f, 185f, 80f, 80f, ActorRod.RodTag.GOLD_500));
+
+        lstAcRod.add(new ActorRod(566f, 108f, 25f, 25f, ActorRod.RodTag.EMERALD_100));
+        lstAcRod.add(new ActorRod(41f, 295f, 25f, 25f, ActorRod.RodTag.EMERALD_100));
+        lstAcRod.add(new ActorRod(683f, 162f, 25f, 25f, ActorRod.RodTag.EMERALD_100));
+
+        lstAcRod.add(new ActorRod(926f, 307f, 25f, 25f, ActorRod.RodTag.RUBY_150));
+        lstAcRod.add(new ActorRod(60f, 254f, 25f, 25f, ActorRod.RodTag.RUBY_150));
+        lstAcRod.add(new ActorRod(453f, 289f, 25f, 25f, ActorRod.RodTag.RUBY_150));
 
         GameMethods.createPlayScreenActorText(getStageGame(), lstAcRod, lstAcText);
 
@@ -124,6 +133,7 @@ public class ScreenPlayLevel7 extends AbstractScreen {
         Gdx.input.setInputProcessor(stageSetting);
 
         setScreenState(ScreenState.PAUSE);
+
     }
 
     @Override

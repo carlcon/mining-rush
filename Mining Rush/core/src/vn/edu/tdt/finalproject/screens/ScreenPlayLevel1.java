@@ -54,10 +54,10 @@ public class ScreenPlayLevel1 extends AbstractScreen{
         this.createCamera();
         createStageGame();
         //stage.setDebugAll(true);
-
+        PlayerInfo.setCurrentTarget(600);
         app.batch.setProjectionMatrix(getCamera().combined);
         app.shapeBatch.setProjectionMatrix(getCamera().combined);
-        background = new Texture("images/backgrounds/map_day.jpg");
+        background = new Texture("images/backgrounds/ingame_background.png");
 
         startTime = TimeUtils.millis()/1000;
         pauseTempTime = new long[2];
@@ -70,11 +70,8 @@ public class ScreenPlayLevel1 extends AbstractScreen{
         boomButton = new ActorButton(128f, 128f, ActorButton.ButtonTag.BOOM);
         settingButton = new ActorButton(100f, 100f, ActorButton.ButtonTag.SETTING);
 
-        lstAcRod.add(new ActorRod(700f, 200f, 60f, 50f, ActorRod.RodTag.ROCK_20));
         lstAcRod.add(new ActorRod(500f, 200f, 60f, 50f, ActorRod.RodTag.ROCK_20));
         lstAcRod.add(new ActorRod(400f, 150f, 60f, 50f, ActorRod.RodTag.ROCK_20));
-        lstAcRod.add(new ActorRod(300f, 50f, 60f, 50f, ActorRod.RodTag.ROCK_20));
-        lstAcRod.add(new ActorRod(650f, 90f, 60f, 50f, ActorRod.RodTag.ROCK_20));
         lstAcRod.add(new ActorRod(100f, 120f, 60f, 50f, ActorRod.RodTag.ROCK_20));
         lstAcRod.add(new ActorRod(750f, 100f, 40f, 40f, ActorRod.RodTag.ROCK_10));
 
@@ -118,6 +115,8 @@ public class ScreenPlayLevel1 extends AbstractScreen{
         Gdx.input.setInputProcessor(stageSetting);
 
         setScreenState(ScreenState.PAUSE);
+
+
     }
 
     @Override

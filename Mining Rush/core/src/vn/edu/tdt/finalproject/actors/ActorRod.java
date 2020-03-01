@@ -17,7 +17,7 @@ public class ActorRod extends Actor {
     public enum RodTag{
         GOLD_500, GOLD_250, GOLD_100, GOLD_50,
         ROCK_20, ROCK_10,
-        DINAMOND_650
+        DINAMOND_650, RUBY_150, EMERALD_100, SAPPHIRE_200, AMETHYST_300
     }
 
     public enum RodState{
@@ -126,7 +126,35 @@ public class ActorRod extends Actor {
             money = 650;
             weight = 1f * ScreenConstants.TRANSFORM_Y;
             textureRod = new Texture("images/textureobjects/dinamond.png");
-            rodSound = new SoundEffect("sounds/bigmoney.ogg");
+            rodSound = new SoundEffect("sounds/gem.ogg");
+            return;
+        }
+        if(tag.equals(RodTag.EMERALD_100)){
+            money = 100;
+            weight = 1f * ScreenConstants.TRANSFORM_Y;
+            textureRod = new Texture("images/textureobjects/emerald.png");
+            rodSound = new SoundEffect("sounds/gem.ogg");
+            return;
+        }
+        if(tag.equals(RodTag.RUBY_150)){
+            money = 150;
+            weight = 1f * ScreenConstants.TRANSFORM_Y;
+            textureRod = new Texture("images/textureobjects/ruby.png");
+            rodSound = new SoundEffect("sounds/gem.ogg");
+            return;
+        }
+        if(tag.equals(RodTag.SAPPHIRE_200)){
+            money = 200;
+            weight = 1f * ScreenConstants.TRANSFORM_Y;
+            textureRod = new Texture("images/textureobjects/sapphire.png");
+            rodSound = new SoundEffect("sounds/gem.ogg");
+            return;
+        }
+        if(tag.equals(RodTag.AMETHYST_300)){
+            money = 300;
+            weight = 1f * ScreenConstants.TRANSFORM_Y;
+            textureRod = new Texture("images/textureobjects/amethyst.png");
+            rodSound = new SoundEffect("sounds/gem.ogg");
             return;
         }
         if(tag.equals(RodTag.ROCK_20)){
@@ -181,7 +209,7 @@ public class ActorRod extends Actor {
             eatBonusSound.setSoundKind(SoundEffect.SoundKind.ONE_TIME);
             PlayerInfo.setCurrentMoney(PlayerInfo.getCurrentMoney() + money);
 
-            talkingText.setText("Oh yeah!$" + money + "...");
+            talkingText.setText(money + " php!");
             talkingText.setTextState(ActorText.TextState.FREEZE);
             TextConstants.setTakingStartTimeShow(TimeUtils.millis()/1000);
             setPosition(0 - getWidth(), 0 - getHeight());

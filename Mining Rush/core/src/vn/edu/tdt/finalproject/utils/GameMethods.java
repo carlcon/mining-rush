@@ -39,7 +39,7 @@ public class GameMethods {
             }
         }
 
-        PlayerInfo.setCurrentTarget(PlayerInfo.getCurrentTarget() + (targetTemp*9/20));
+       // PlayerInfo.setCurrentTarget(PlayerInfo.getCurrentTarget() + (targetTemp*9/20));
         lstAcText.get(ActorText.TextTag.TARGET).setText("" + PlayerInfo.getCurrentTarget());
     }
 
