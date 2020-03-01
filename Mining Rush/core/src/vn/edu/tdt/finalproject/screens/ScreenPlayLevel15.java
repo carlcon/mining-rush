@@ -73,25 +73,44 @@ public class ScreenPlayLevel15 extends AbstractScreen {
         boomButton = new ActorButton(128f, 128f, ActorButton.ButtonTag.BOOM);
         settingButton = new ActorButton(100f, 100f, ActorButton.ButtonTag.SETTING);
 
-        lstAcRod.add(new ActorRod(100f, 50f, 60f, 50f, ActorRod.RodTag.ROCK_20));
-        lstAcRod.add(new ActorRod(250f, 80f, 60f, 50f, ActorRod.RodTag.ROCK_20));
-        lstAcRod.add(new ActorRod(500f, 10f, 60f, 50f, ActorRod.RodTag.ROCK_20));
-        lstAcRod.add(new ActorRod(180f, 350f, 60f, 50f, ActorRod.RodTag.ROCK_20));
+        lstAcRod.add(new ActorRod(370f, 266f, 60f, 50f, ActorRod.RodTag.ROCK_10));
+        lstAcRod.add(new ActorRod(890f, 335f, 60f, 50f, ActorRod.RodTag.ROCK_10));
+        lstAcRod.add(new ActorRod(167f, 321f, 60f, 50f, ActorRod.RodTag.ROCK_10));
+        lstAcRod.add(new ActorRod(617f, 227f, 60f, 50f, ActorRod.RodTag.ROCK_10));
+        lstAcRod.add(new ActorRod(840f, 260f, 60f, 50f, ActorRod.RodTag.ROCK_10));
+        lstAcRod.add(new ActorRod(244f, 120f, 60f, 50f, ActorRod.RodTag.ROCK_10));
+        lstAcRod.add(new ActorRod(576f, 380f, 60f, 50f, ActorRod.RodTag.ROCK_10));
 
-        lstAcRod.add(new ActorRod(700f, 200f, 60f, 50f, ActorRod.RodTag.ROCK_20));
-        lstAcRod.add(new ActorRod(500f, 200f, 60f, 50f, ActorRod.RodTag.ROCK_20));
-        lstAcRod.add(new ActorRod(400f, 150f, 60f, 50f, ActorRod.RodTag.ROCK_20));
-        lstAcRod.add(new ActorRod(300f, 50f, 60f, 50f, ActorRod.RodTag.ROCK_20));
-        lstAcRod.add(new ActorRod(700f, 90f, 60f, 50f, ActorRod.RodTag.ROCK_20));
-        lstAcRod.add(new ActorRod(100f, 120f, 60f, 50f, ActorRod.RodTag.ROCK_20));
+        lstAcRod.add(new ActorRod(293f, 89f, 60f, 50f, ActorRod.RodTag.ROCK_20));
+        lstAcRod.add(new ActorRod(213f, 284f, 60f, 50f, ActorRod.RodTag.ROCK_20));
+        lstAcRod.add(new ActorRod(678f, 179f, 60f, 50f, ActorRod.RodTag.ROCK_20));
+        lstAcRod.add(new ActorRod(395f, 232f, 60f, 50f, ActorRod.RodTag.ROCK_20));
 
-        lstAcRod.add(new ActorRod(800f, 100f, 40f, 30f, ActorRod.RodTag.DINAMOND_650));
-        lstAcRod.add(new ActorRod(200f, 200f, 80f, 80f, ActorRod.RodTag.GOLD_500));
-        lstAcRod.add(new ActorRod(50f, 50f, 40f, 30f, ActorRod.RodTag.DINAMOND_650));
-        lstAcRod.add(new ActorRod(600f, 100f, 60f, 60f, ActorRod.RodTag.GOLD_250));
-        lstAcRod.add(new ActorRod(700f, 300f, 40f, 30f, ActorRod.RodTag.DINAMOND_650));
-        lstAcRod.add(new ActorRod(10f, 300f, 60f, 60f, ActorRod.RodTag.GOLD_250));
-        lstAcRod.add(new ActorRod(10f, 200f, 80f, 80f, ActorRod.RodTag.GOLD_500));
+        lstAcRod.add(new ActorRod(818f, 380f, 60f, 50f, ActorRod.RodTag.GOLD_50));
+
+        lstAcRod.add(new ActorRod(305f, 383f, 60f, 50f, ActorRod.RodTag.GOLD_100));
+
+        lstAcRod.add(new ActorRod(544f, 305f, 60f, 50f, ActorRod.RodTag.GOLD_250));
+        lstAcRod.add(new ActorRod(753f, 141f, 60f, 50f, ActorRod.RodTag.GOLD_250));
+
+        lstAcRod.add(new ActorRod(758f, 245f, 80f, 80f, ActorRod.RodTag.GOLD_500));
+        lstAcRod.add(new ActorRod(153f, 204f, 80f, 80f, ActorRod.RodTag.GOLD_500));
+
+        lstAcRod.add(new ActorRod(428f, 105f, 25f, 25f, ActorRod.RodTag.EMERALD_100));
+        lstAcRod.add(new ActorRod(814f, 304f, 25f, 25f, ActorRod.RodTag.EMERALD_100));
+
+        lstAcRod.add(new ActorRod(475f, 117f, 25f, 25f, ActorRod.RodTag.RUBY_150));
+        lstAcRod.add(new ActorRod(98f, 317f, 25f, 25f, ActorRod.RodTag.RUBY_150));
+
+        lstAcRod.add(new ActorRod(280f, 186f, 25f, 25f, ActorRod.RodTag.SAPPHIRE_200));
+        lstAcRod.add(new ActorRod(629f, 64f, 25f, 25f, ActorRod.RodTag.SAPPHIRE_200));
+
+        lstAcRod.add(new ActorRod(19f, 186f, 25f, 25f, ActorRod.RodTag.AMETHYST_300));
+        lstAcRod.add(new ActorRod(107f, 89f, 25f, 25f, ActorRod.RodTag.AMETHYST_300));
+
+        lstAcRod.add(new ActorRod(839f, 187f, 25f, 25f, ActorRod.RodTag.DIAMOND_650));
+        lstAcRod.add(new ActorRod(890f, 210f, 25f, 25f, ActorRod.RodTag.DIAMOND_650));
+        lstAcRod.add(new ActorRod(839f, 141f, 25f, 25f, ActorRod.RodTag.DIAMOND_650));
 
         GameMethods.createPlayScreenActorText(getStageGame(), lstAcRod, lstAcText);
 

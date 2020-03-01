@@ -17,7 +17,7 @@ public class ActorRod extends Actor {
     public enum RodTag{
         GOLD_500, GOLD_250, GOLD_100, GOLD_50,
         ROCK_20, ROCK_10,
-        DINAMOND_650, RUBY_150, EMERALD_100, SAPPHIRE_200, AMETHYST_300
+        DIAMOND_650, RUBY_150, EMERALD_100, SAPPHIRE_200, AMETHYST_300
     }
 
     public enum RodState{
@@ -122,7 +122,7 @@ public class ActorRod extends Actor {
             rodSound = new SoundEffect("sounds/gold.ogg");
             return;
         }
-        if(tag.equals(RodTag.DINAMOND_650)){
+        if(tag.equals(RodTag.DIAMOND_650)){
             money = 650;
             weight = 1f * ScreenConstants.TRANSFORM_Y;
             textureRod = new Texture("images/textureobjects/dinamond.png");
