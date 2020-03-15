@@ -65,7 +65,7 @@ public class MainMenuScreen extends AbstractScreen {
         getStageGame().addActor(btnExitGame);
         Gdx.input.setInputProcessor(getStageGame());
 
-        PlayerInfo.setCurrentBombNum(99);
+        PlayerInfo.setCurrentBombNum(3);
         PlayerInfo.setCurrentMoney(0);
         PlayerInfo.setCurrentTarget(0);
         PlayerInfo.setCurrentLevel(1);
