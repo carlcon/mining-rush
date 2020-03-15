@@ -54,7 +54,7 @@ public class ScreenPlayLevel16 extends AbstractScreen {
     public void show() {
         this.createCamera();
         createStageGame();
-        PlayerInfo.setCurrentTarget(15000);
+        PlayerInfo.setCurrentTarget(16000);
         //stage.setDebugAll(true);
 
         app.batch.setProjectionMatrix(getCamera().combined);
